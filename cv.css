@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e0e7ff 100%); /* Subtle gradient background */
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-family: 'Poiret One', sans-serif; /* Use Poiret One for name */
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.header .tagline {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #555;
+}
+
+.header .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.header .contact-info a, .header .contact-info span {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.header .contact-info i {
+    font-size: 16px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-family: 'Poiret One', sans-serif; /* Use Poiret One for section headings */
+    font-size: 24px;
+    color: #fff;
+    background: #007bff; /* Colored background for section headers */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Summary */
+.summary p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.skills-column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills-column ul {
+    list-style: none;
+}
+
+.skills-column li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Experience and Projects */
+.experience-item, .project-item {
+    margin-bottom: 15px;
+}
+
+.experience-item h3, .project-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.experience-item p, .project-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.experience-item ul, .project-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.experience-item li, .project-item li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Education and Certifications */
+.education-item, .certification-item {
+    margin-bottom: 10px;
+}
+
+.education-item h3, .certification-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.education-item p, .certification-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media print {
+    body {
+        background: #fff;
+        padding: 0;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .section h2 {
+        background: none; /* Remove background for printing */
+        color: #007bff;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cv-container {
+        padding: 20px;
+    }
+
+    .skills-column {
+        min-width: 150px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .header .tagline {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cv-container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header .tagline {
+        font-size: 14px;
+    }
+
+    .header .contact-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .skills-column h3 {
+        font-size: 16px;
+    }
+
+    .skills-column li {
+        font-size: 14px;
+    }
+}
